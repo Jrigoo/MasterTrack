@@ -2,11 +2,10 @@ import type { NextPage } from "next";
 import React from "react";
 import Head from "next/head";
 import { Navbar } from "../components/Navbar";
-import { Network } from "../components/Network";
 import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { Resources } from "../components/Resources";
 
-const Home: NextPage = () => {
+const Recursos: NextPage = () => {
   return (
     <>
       <Head>
@@ -15,11 +14,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Header />
-      <Network />
+      <Resources />
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default Recursos;
