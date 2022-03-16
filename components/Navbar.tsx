@@ -43,7 +43,10 @@ export const Navbar = () => {
         <Link href="/metas">
           <a className="text-xs p-1">Metas</a>
         </Link>
-        <a href="" className="text-xs p-1">
+        <a
+          href="https://panacademyedu.wixsite.com/website/copia-de-2-f-l-bulls"
+          className="text-xs p-1"
+        >
           Panacademy
         </a>
         <Link href="/whatsapp">

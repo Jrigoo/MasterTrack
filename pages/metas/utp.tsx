@@ -37,3 +37,5 @@ const UTP: NextPage = () => {
     </>
   );
 };
+
+export default UTP;

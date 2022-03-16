@@ -37,3 +37,5 @@ const UP: NextPage = () => {
     </>
   );
 };
+
+export default UP;
