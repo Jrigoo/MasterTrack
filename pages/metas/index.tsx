@@ -11,7 +11,7 @@ const Metas: NextPage = () => {
       <Head>
         <title>oGX Panamá</title>
         <meta name="Canaleros Panamá" content="AIESEC oGX Web Hub" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Canaleros.png" />
       </Head>
       <Navbar />
       <Goals />

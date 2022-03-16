@@ -15,7 +15,7 @@ const UP: NextPage = () => {
       <Head>
         <title>oGX Panamá</title>
         <meta name="Canaleros Panamá" content="AIESEC oGX Web Hub" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Canaleros.png" />
       </Head>
       <Navbar />
       <main className="mb-5 p-5 text-navy">
@@ -29,7 +29,7 @@ const UP: NextPage = () => {
         </h1>
 
         <div className="grid place-content-center">
-          <Logo LC={{ href: "", name: "Santiago", size: 130 }} />
+          <Logo LC={{ href: "", name: "UP", size: 130 }} />
         </div>
         <LC comite={UPGoals} />
       </main>

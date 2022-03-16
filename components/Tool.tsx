@@ -7,20 +7,39 @@ import { useData } from "../hooks/useContext";
 
 export const Tool = () => {
   const [pitch, setPitch] = React.useState("");
+  const [search, setSearch] = React.useState("");
+  const [filtered, setFiltered] = React.useState<
+    Array<{ name: string; number: string }>
+  >([]);
   const { contacts, setContacts, addLocal } = useData();
 
   React.useEffect(() => {
     const data = getLocal();
-    if (data) setContacts(data);
+    if (data) {
+      setContacts(data);
+      setFiltered(data);
+    }
   }, [setContacts]);
 
   React.useEffect(() => {
     setPitch(getLocalPitch() || "");
   }, []);
 
+  React.useEffect(() => {
+    setFiltered(contacts);
+  }, [contacts]);
+
   function onChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
     setPitch(e.target.value);
     setLocalPitch(e.target.value);
+  }
+
+  function onSearch(e: React.ChangeEvent<HTMLInputElement>) {
+    setSearch(e.target.value);
+    const n = contacts.filter((contact) =>
+      contact.name.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+    setFiltered(n);
   }
 
   return (
@@ -57,8 +76,9 @@ export const Tool = () => {
             <input
               type="text"
               placeholder="Buscar..."
-              value={""}
+              value={search}
               className="w-full bg-white rounded-md text-xs outline-none"
+              onChange={onSearch}
             />
             <SearchIcon className="h-5 w-5" />
           </div>
@@ -75,7 +95,7 @@ export const Tool = () => {
                 <th className="p-2 font-medium tracking-wide">Link</th>
                 <th className="p-2 font-medium tracking-wide">
                   <PlusCircleIcon
-                    className="h-6 w-6 text-blanco active:scale-110 transition-all duration-300"
+                    className="h-6 w-6 text-blanco hover:scale-110"
                     onClick={() => {
                       addLocal();
                     }}
@@ -85,7 +105,7 @@ export const Tool = () => {
             </thead>
             {/* Content */}
             <tbody>
-              {contacts.map((contact, idx) => (
+              {filtered.map((contact, idx) => (
                 <Row contact={contact} idx={idx} key={idx} pitch={pitch} />
               ))}
             </tbody>
