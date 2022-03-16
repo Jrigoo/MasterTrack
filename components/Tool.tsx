@@ -1,7 +1,10 @@
 import React from "react";
-import { SearchIcon } from "@heroicons/react/solid";
+
 import { Row } from "./Row";
+
+import { SearchIcon } from "@heroicons/react/solid";
 import { PlusCircleIcon } from "@heroicons/react/outline";
+
 import { getLocal, getLocalPitch, setLocalPitch } from "../utils/local";
 import { useData } from "../hooks/useContext";
 
@@ -11,6 +14,7 @@ export const Tool = () => {
   const [filtered, setFiltered] = React.useState<
     Array<{ name: string; number: string }>
   >([]);
+
   const { contacts, setContacts, addLocal } = useData();
 
   React.useEffect(() => {
@@ -103,6 +107,7 @@ export const Tool = () => {
                 </th>
               </tr>
             </thead>
+
             {/* Content */}
             <tbody>
               {filtered.map((contact, idx) => (

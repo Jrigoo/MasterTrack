@@ -12,15 +12,15 @@ export const Profile: React.FC<Props> = ({ canalero }) => {
       <div className="rounded-full">
         <Image
           loading="lazy"
-          width={200}
-          height={200}
+          width={210}
+          height={210}
           className="object-cover rounded-full"
           alt={`Foto de ${canalero.name}`}
           src={canalero.image}
         />
       </div>
       <h1 className="font-bold text-lg">{canalero.name}</h1>
-      <p className="text-md">{canalero.role}</p>
+      <p className="text-sm lg:text-base">{canalero.role}</p>
     </div>
   );
 };

@@ -34,3 +34,9 @@ body {
     rgba(237, 248, 255, 1) 100%
   ); */
 }
+
+@media (min-width: 550px) {
+  .links {
+    height: fit-content !important;
+  }
+}
