@@ -15,6 +15,7 @@ export const Logo: React.FC<Props> = ({ LC }) => {
     <Link href={LC.href}>
       <a className="rounded-full bg-blanco shadow-default grid place-content-center">
         <Image
+          loading="lazy"
           width={LC.size || 80}
           height={LC.size || 80}
           alt={`AIESEC en ${LC.name}`}

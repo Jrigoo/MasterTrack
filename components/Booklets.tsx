@@ -13,6 +13,7 @@ export const Booklets = () => {
         <a href="" className="">
           <div className="w-fit bg-white shadow-default px-2 py-3 rounded-md grid place-items-center mx-5">
             <Image
+              loading="lazy"
               width={114}
               height={35}
               alt="AIESEC Product"
@@ -24,6 +25,7 @@ export const Booklets = () => {
         <a href="" className="">
           <div className="w-fit bg-white shadow-default px-2 py-3 rounded-md grid place-items-center">
             <Image
+              loading="lazy"
               width={114}
               height={35}
               alt="AIESEC Product"
@@ -35,6 +37,7 @@ export const Booklets = () => {
         <a href="" className="">
           <div className="w-fit bg-white shadow-default px-2 py-3 rounded-md grid place-items-center">
             <Image
+              loading="lazy"
               width={114}
               height={35}
               alt="AIESEC Product"

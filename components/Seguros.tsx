@@ -14,6 +14,7 @@ export const Seguros = () => {
           <a href={seguro.link} key={seguro.name}>
             <div className="bg-blanco shadow-default p-5 grid place-content-center rounded-md">
               <Image
+                loading="lazy"
                 src={seguro.image}
                 alt={`${seguro.name} logo`}
                 width={50}

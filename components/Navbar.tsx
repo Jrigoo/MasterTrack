@@ -11,6 +11,7 @@ export const Navbar = () => {
       <Link href="/">
         <a className="block w-fit">
           <Image
+            loading="lazy"
             src="/Images/Blue-Logo.png"
             width={105}
             height={24}

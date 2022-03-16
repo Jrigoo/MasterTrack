@@ -16,6 +16,7 @@ export const SearchTools = () => {
             <b>GTa & GTe</b>
           </h1>
           <Image
+            loading="lazy"
             src="/Images/ELD/GTa-circle.png"
             alt={`GTa Circle`}
             width={30}
@@ -23,6 +24,7 @@ export const SearchTools = () => {
             className="object-contain"
           />
           <Image
+            loading="lazy"
             src="/Images/ELD/GTe-circle.png"
             alt={`GTe Circle`}
             width={30}
@@ -35,6 +37,7 @@ export const SearchTools = () => {
             <a key={country.name} href={country.link}>
               <div className="grid place-content-center m-3">
                 <Image
+                  loading="lazy"
                   src={country.image}
                   alt={`${country.name} Flag`}
                   width={25}
@@ -55,6 +58,7 @@ export const SearchTools = () => {
             <b>GV</b>
           </h1>
           <Image
+            loading="lazy"
             src="/Images/ELD/GV-circle.png"
             alt={`GV Circle`}
             width={30}
@@ -68,6 +72,7 @@ export const SearchTools = () => {
             <a key={country.name} href={country.link}>
               <div className="grid place-content-center m-3">
                 <Image
+                  loading="lazy"
                   src={country.image}
                   alt={`${country.name} Flag`}
                   width={25}

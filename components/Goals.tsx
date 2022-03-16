@@ -24,6 +24,7 @@ export const Goals = () => {
         </h1>
         <div className="w-full grid place-content-center">
           <Image
+            loading="lazy"
             width={200}
             height={100}
             alt="OP Dashboard"
