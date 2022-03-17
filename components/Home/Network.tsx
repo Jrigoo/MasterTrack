@@ -8,7 +8,7 @@ export const Network = () => {
         Conoce a la <b>red</b>
       </h1>
 
-      <section className="flex flex-col items-center space-y-5 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-8 md:grid-cols-3 md:gap-y-12 lg:grid-cols-4 lg:px-10">
+      <section className="flex flex-col items-center sm:flex-row sm:flex-wrap sm:justify-around">
         {TEAM.map((canalero, idx) => (
           <Profile key={idx} canalero={canalero} />
         ))}

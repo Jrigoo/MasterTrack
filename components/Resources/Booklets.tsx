@@ -7,36 +7,37 @@ interface Props {
 
 export const Booklets: React.FC<Props> = ({ className }) => {
   return (
-    <section className={`mb-8 ${className}`}>
+    <section
+      className={`grid grid-cols-1 gap-3 sm:grid-cols-[320px] content-start justify-center mb-4 ${className}`}
+    >
       {/* Titulo */}
       <a href="https://drive.google.com/drive/folders/1QY9CHiJ3tQTQ1JIz99hGgNiRcb3VFYFC?usp=sharing">
-        <h1 className="title">
+        <h1 className="title hover:scale-110 transition-all duration-200 hover:underline">
           Sales <b>Booklets</b>
         </h1>
       </a>
-      <div className="grid grid-cols-[repeat(2,130px)] gap-3 place-content-center sm:gap-5 sm:grid-cols-[repeat(2,150px)]">
+      <div className="grid grid-cols-[repeat(2,130px)] gap-3 place-content-center sm:gap-5 sm:grid-cols-[repeat(2,150px)] md:grid-cols-[repeat(2,170px)] ">
         {/* Booklet GTa */}
-        <div className="w-full col-span-2 flex justify-center md:col-span-1 ">
-          <a
-            href="https://docs.google.com/presentation/d/1TMg12X14gikYvr4MfiB5peShr5PNqv0t2KvfWnxLuL8/edit?usp=sharing"
-            className="w-[130px] sm:w-[150px]"
-          >
-            <div className="w-full h-full bg-white shadow-default rounded-md px-2 py-3">
-              <Image
-                loading="lazy"
-                width={256}
-                height={79}
-                layout="responsive"
-                alt="AIESEC Product"
-                src="/Images/ELD/GTa.png"
-                className="object-contain"
-              />
-            </div>
-          </a>
-        </div>
+        <a
+          href="https://docs.google.com/presentation/d/1TMg12X14gikYvr4MfiB5peShr5PNqv0t2KvfWnxLuL8/edit?usp=sharing"
+          className="w-full h-full col-span-2 flex justify-center items-center sm:col-span-1"
+        >
+          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-200 sm:px-3 sm:py-4 sm:w-full">
+            <Image
+              loading="lazy"
+              width={256}
+              height={79}
+              layout="responsive"
+              alt="AIESEC Product"
+              src="/Images/ELD/GTa.png"
+              className="object-contain w-full h-full"
+            />
+          </div>
+        </a>
+
         {/* Booklet GTe */}
         <a href="">
-          <div className="w-full h-full bg-white shadow-default rounded-md px-2 py-3">
+          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-200 sm:px-3 sm:py-4 sm:w-full">
             <Image
               loading="lazy"
               width={256}
@@ -44,13 +45,14 @@ export const Booklets: React.FC<Props> = ({ className }) => {
               layout="responsive"
               alt="AIESEC Product"
               src="/Images/ELD/GTe.png"
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </a>
+
         {/* Booklet GV */}
         <a href="https://docs.google.com/presentation/d/1X7zJZLKt8c_bd5tKBof1irCkTtJJvRmtGEfEJIcL5wg/edit?usp=sharing">
-          <div className="w-full h-full bg-white shadow-default rounded-md px-2 py-3">
+          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-200 sm:px-3 sm:py-4 sm:w-full">
             <Image
               loading="lazy"
               width={256}
@@ -58,7 +60,7 @@ export const Booklets: React.FC<Props> = ({ className }) => {
               layout="responsive"
               alt="AIESEC Product"
               src="/Images/ELD/GV.png"
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </a>

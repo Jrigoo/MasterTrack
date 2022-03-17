@@ -2,7 +2,7 @@ export const OTROS = [
   {
     bold: "Form",
     light: "EXPA/Podio",
-    link: "",
+    link: "https://share.streamlit.io/aiesec-pty/register/main/main.py",
     order: true,
   },
   {
@@ -12,15 +12,15 @@ export const OTROS = [
     order: false,
   },
   {
-    light: "oGX",
+    light: "AIESEC",
     bold: "Basics",
-    link: "",
+    link: "http://aies.ec/allyouneed",
     order: false,
   },
   {
     bold: "Convenio",
     light: "",
-    link: "",
+    link: "https://aiesecenpanama.typeform.com/to/e3xcTfA4",
     order: true,
   },
   {
@@ -30,21 +30,21 @@ export const OTROS = [
     order: true,
   },
   {
-    light: "Plan",
-    bold: "de pago",
-    link: "",
-    order: false,
+    bold: "Global",
+    light: "Contact List",
+    link: "http://aies.ec/contacts22",
+    order: true,
   },
   {
     bold: "Portafolio",
     light: "AIESEC",
-    link: "",
+    link: "bit.ly/portafolio-aiesecpty",
     order: true,
   },
   {
     bold: "Customer",
     light: "Persona",
-    link: "",
+    link: "bit.ly/cp-aiesecpty",
     order: true,
   },
 ];

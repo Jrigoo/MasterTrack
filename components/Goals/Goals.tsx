@@ -34,7 +34,7 @@ export const Goals = () => {
         <h1 className="title">
           OP <b>Dashboard</b>
         </h1>
-        <div className="w-full h-full relative">
+        <div className="w-full h-full relative hover:scale-110 transition-all duration-200">
           <Image
             loading="lazy"
             layout="responsive"

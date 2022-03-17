@@ -53,7 +53,7 @@ export const Tool = () => {
       </h1>
 
       {/* Pitch */}
-      <div className="my-5 grid grid-cols-[240px] place-content-center sm:grid-cols-[350px] md:grid-cols-[400px]">
+      <div className="my-5 grid grid-cols-[240px] place-content-center sm:grid-cols-[350px] md:grid-cols-[400px] hover:scale-105 transition-all duration-200">
         <div className="bg-naranja rounded-t-lg shadow-default">
           <h1 className="py-2 text-center text-blanco">
             Contact <b>Message</b>
@@ -76,7 +76,7 @@ export const Tool = () => {
           <h1 className="w-[75%]">
             Lista de <b>Contactos</b>
           </h1>
-          <div className="bg-white rounded-lg shadow-default flex justify-between items-center px-2 py-1">
+          <div className="bg-white rounded-lg shadow-default flex justify-between items-center px-2 py-1 hover:scale-105 transition-all duration-200">
             <input
               type="text"
               placeholder="Buscar..."
@@ -89,7 +89,7 @@ export const Tool = () => {
         </header>
 
         {/* Tabla de contactos */}
-        <div className="overflow-y-auto max-h-[230px] min-h-[100px] relative rounded-lg text-xs my-5">
+        <div className="overflow-y-auto max-h-[230px] min-h-[100px] relative rounded-lg text-xs my-5 hover:scale-105 transition-all duration-200">
           <table className="w-full relative bg-white">
             {/* Head */}
             <thead className="bg-naranja shadow-default sticky top-0 left-0 text-blanco">

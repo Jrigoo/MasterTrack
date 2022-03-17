@@ -8,19 +8,21 @@ interface Props {
 
 export const Profile: React.FC<Props> = ({ canalero }) => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="rounded-full">
-        <Image
-          loading="lazy"
-          width={210}
-          height={210}
-          className="object-cover rounded-full"
-          alt={`Foto de ${canalero.name}`}
-          src={canalero.image}
-        />
+    <a href={canalero.insta}>
+      <div className="flex flex-col items-center mx-3 md:mx-5 mb-10 hover:scale-110 transition-all duration-200">
+        <div className="rounded-full">
+          <Image
+            loading="lazy"
+            width={210}
+            height={210}
+            className="object-cover rounded-full"
+            alt={`Foto de ${canalero.name}`}
+            src={canalero.image}
+          />
+        </div>
+        <h1 className="font-bold text-lg">{canalero.name}</h1>
+        <p className="text-sm lg:text-base">{canalero.role}</p>
       </div>
-      <h1 className="font-bold text-lg">{canalero.name}</h1>
-      <p className="text-sm lg:text-base">{canalero.role}</p>
-    </div>
+    </a>
   );
 };
