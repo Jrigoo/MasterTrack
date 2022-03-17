@@ -14,6 +14,10 @@ body {
   background-color: #edfbff;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .links {
   height: 0px;
   overflow: hidden;
@@ -27,12 +31,17 @@ body {
     rgba(31, 139, 205, 1) 51%,
     rgba(58, 175, 250, 1) 100%
   );
-  /*  background: rgb(31, 139, 205);
-  background: linear-gradient(
-    180deg,
-    rgba(31, 139, 205, 1) 45%,
-    rgba(237, 248, 255, 1) 100%
-  ); */
+}
+@layer components {
+  .title {
+    @apply py-5 text-lg text-center sm:text-xl md:text-2xl lg:text-3xl;
+  }
+  .numbers {
+    @apply w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mb-1 grid place-content-center bg-white shadow-default;
+  }
+  .subtitle {
+    @apply px-2 text-sm text-center sm:text-base md:text-lg lg:text-xl;
+  }
 }
 
 @media (min-width: 550px) {

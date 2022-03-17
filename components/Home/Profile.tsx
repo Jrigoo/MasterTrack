@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ITeam } from "../utils/team";
+import { ITeam } from "../../utils/team";
 
 interface Props {
   canalero: ITeam;

@@ -1,9 +1,9 @@
 import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Navbar } from "../../components/Navbar";
-import { Footer } from "../../components/Footer";
-import { Goals } from "../../components/Goals";
+import { Navbar } from "../../components/General/Navbar";
+import { Footer } from "../../components/General/Footer";
+import { Goals } from "../../components/Goals/Goals";
 
 const Metas: NextPage = () => {
   return (

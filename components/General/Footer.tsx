@@ -11,16 +11,25 @@ import { faFire } from "@fortawesome/free-solid-svg-icons";
 export const Footer = () => {
   const date = new Date();
   return (
-    <footer className="w-full bg-navy p-5">
-      <div className="flex justify-around space-x-2 mb-3">
+    <footer className="w-full bg-navy pb-5 pt-10 md:pb-8 md:pt-16 lg:pt-20">
+      <div className="w-full mb-3 grid place-content-center place-items-center grid-cols-[repeat(3,90px)] md:grid-cols-[repeat(3,120px)]">
         <a href="https://www.instagram.com/ogx.canaleros/">
-          <FontAwesomeIcon icon={faInstagram} className="w-7 h-7 text-blanco" />
+          <FontAwesomeIcon
+            icon={faInstagram}
+            className="w-7 text-blanco md:w-10"
+          />
         </a>
         <a href="https://www.linkedin.com/company/aiesec-panama/mycompany/?viewAsMember=true">
-          <FontAwesomeIcon icon={faLinkedin} className="w-7 h-7 text-blanco" />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="w-7 text-blanco md:w-10"
+          />
         </a>
         <a href="https://github.com/Jrigoo">
-          <FontAwesomeIcon icon={faGithub} className="w-7 h-7 text-blanco" />
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="w-7 text-blanco md:w-10"
+          />
         </a>
       </div>
       <p className="text-sm py-5 text-center text-blanco font-light">

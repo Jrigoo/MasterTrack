@@ -1,7 +1,7 @@
 import React from "react";
 import { XIcon } from "@heroicons/react/outline";
-import { modifyLocal } from "../utils/local";
-import { useData } from "../hooks/useContext";
+import { modifyLocal } from "../../utils/local";
+import { useData } from "../../hooks/useContext";
 
 interface Props {
   contact: {
@@ -30,7 +30,11 @@ export const Row: React.FC<Props> = ({ contact, idx, pitch }) => {
   }
 
   return (
-    <tr className={`${idx % 2 && "bg-orange-100"} cursor-pointer text-xs`}>
+    <tr
+      className={`${
+        idx % 2 ? "bg-orange-100" : "bg-white"
+      } cursor-pointer text-xs`}
+    >
       <td className="px-1 py-2 text-left">
         <input
           type="text"

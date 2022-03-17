@@ -6,8 +6,8 @@ import { faFire } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   return (
-    <header className="radial w-full px-2 pt-5 pb-5 text-blanco text-center sm:grid sm:grid-cols-[420px] md:py-10 md:grid-cols-[500px] lg:grid-cols-[700px] place-content-center">
-      <h1 className="py-10 text-lg sm:text-xl md:text-2xl md:pb-10 lg:pb-16 lg:text-3xl">
+    <header className="radial w-full px-2 pt-5 pb-5 text-blanco text-center sm:grid sm:grid-cols-[420px] md:py-10 md:grid-cols-[500px] lg:grid-cols-[600px] place-content-center">
+      <h1 className="py-5 text-base text-center sm:text-lg md:text-xl lg:text-2xl">
         Enviamos el <b>mejor talento</b> de Panamá pal <b>MUNDO</b>
       </h1>
       <div className="flex justify-between mt-5 text-sm md:text-sm lg:text-lg">

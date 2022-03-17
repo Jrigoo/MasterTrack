@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import React from "react";
 import Head from "next/head";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
-import { Tool } from "../components/Tool";
+import { Navbar } from "../components/General/Navbar";
+import { Footer } from "../components/General/Footer";
+import { Tool } from "../components/Whatsapp/Tool";
 
 import { Provider } from "../context";
 

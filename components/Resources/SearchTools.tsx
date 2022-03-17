@@ -1,18 +1,24 @@
 import React from "react";
 import Image from "next/image";
-import { GTCountries, GVCountries } from "../utils/countries";
+import { GTCountries, GVCountries } from "../../utils/countries";
 
-export const SearchTools = () => {
+interface Props {
+  className: string;
+}
+
+export const SearchTools: React.FC<Props> = ({ className }) => {
   return (
-    <section className="mb-8">
-      <h1 className="text-lg text-center mb-5">
+    <section
+      className={`grid grid-cols-[300px] gap-3 sm:grid-cols-[320px] place-content-center mb-4 ${className} md:grid-cols-[repeat(2,320px)]`}
+    >
+      <h1 className="title md:col-span-3">
         oGX <b>Searchtools</b>
       </h1>
 
       {/* GTa/GTe Searchtools */}
-      <div className="flex flex-col items-center mb-4">
+      <div>
         <div className="w-full flex justify-center items-center space-x-3 py-2 bg-blanco shadow-default rounded-md">
-          <h1 className="px-2 text-sm">
+          <h1 className="subtitle">
             <b>GTa & GTe</b>
           </h1>
           <Image
@@ -50,11 +56,10 @@ export const SearchTools = () => {
           ))}
         </div>
       </div>
-
       {/* GV Searchtools */}
-      <div className="flex flex-col items-center">
+      <div>
         <div className="w-full flex justify-center items-center space-x-3 py-2 bg-blanco shadow-default rounded-md">
-          <h1 className="px-2 text-sm">
+          <h1 className="subtitle">
             <b>GV</b>
           </h1>
           <Image

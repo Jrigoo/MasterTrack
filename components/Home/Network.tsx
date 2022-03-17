@@ -1,6 +1,6 @@
 import React from "react";
-import { TEAM } from "../utils/team";
-import { Profile } from "../components/Profile";
+import { TEAM } from "../../utils/team";
+import { Profile } from "./Profile";
 export const Network = () => {
   return (
     <main className="text-navy p-5 mb-3">

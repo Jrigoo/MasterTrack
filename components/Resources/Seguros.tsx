@@ -1,11 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import { SEGUROS } from "../utils/seguros";
+import { SEGUROS } from "../../utils/seguros";
 
-export const Seguros = () => {
+interface Props {
+  className: string;
+}
+
+export const Seguros: React.FC<Props> = ({ className }) => {
   return (
-    <section className="mb-8">
-      <h1 className="text-lg text-center mb-3">
+    <section
+      className={`grid grid-cols-1 gap-3 sm:grid-cols-[320px] place-content-center mb-4 ${className}`}
+    >
+      <h1 className="title">
         <b>Seguros</b>
       </h1>
 

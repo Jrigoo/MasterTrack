@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import React from "react";
 import Head from "next/head";
-import { Navbar } from "../components/Navbar";
-import { Network } from "../components/Network";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { Navbar } from "../components/General/Navbar";
+import { Network } from "../components/Home/Network";
+import { Footer } from "../components/General/Footer";
+import { Header } from "../components/Home/Header";
 
 const Home: NextPage = () => {
   return (

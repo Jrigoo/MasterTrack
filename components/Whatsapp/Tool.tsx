@@ -5,8 +5,8 @@ import { Row } from "./Row";
 import { SearchIcon } from "@heroicons/react/solid";
 import { PlusCircleIcon } from "@heroicons/react/outline";
 
-import { getLocal, getLocalPitch, setLocalPitch } from "../utils/local";
-import { useData } from "../hooks/useContext";
+import { getLocal, getLocalPitch, setLocalPitch } from "../../utils/local";
+import { useData } from "../../hooks/useContext";
 
 export const Tool = () => {
   const [pitch, setPitch] = React.useState("");
@@ -53,8 +53,8 @@ export const Tool = () => {
       </h1>
 
       {/* Pitch */}
-      <div className="w-full my-5 rounded-lg shadow-default">
-        <div className="bg-naranja rounded-t-lg">
+      <div className="my-5 grid grid-cols-[240px] place-content-center sm:grid-cols-[350px] md:grid-cols-[400px]">
+        <div className="bg-naranja rounded-t-lg shadow-default">
           <h1 className="py-2 text-center text-blanco">
             Contact <b>Message</b>
           </h1>
@@ -65,13 +65,13 @@ export const Tool = () => {
           rows={10}
           value={pitch}
           onChange={onChange}
-          className="w-full h-40 p-3 outline-none resize-none text-xs"
+          className="w-full h-40 p-3 outline-none resize-none text-xs shadow-default rounded-b-lg"
           placeholder="Holaaa! Mi nombre es Juan soy de AIESEC Panamá organización que busca desarrollar el liderazgo en Jóvenes a través de experiencias de profesionales internacionales. Te escribo porque pude notar que te registraste en nuestra plataforma. ¿Te gustaría recibir más información sobre nuestro programa de pasantías?"
         />
       </div>
 
       {/* Lista de contactos */}
-      <div className="w-full mb-5">
+      <div className="mb-5 grid grid-cols-[240px] place-content-center sm:grid-cols-[350px] md:grid-cols-[400px]">
         <header className="flex justify-between items-center">
           <h1 className="w-[75%]">
             Lista de <b>Contactos</b>
@@ -89,14 +89,20 @@ export const Tool = () => {
         </header>
 
         {/* Tabla de contactos */}
-        <div className="overflow-y-auto h-[230px] relative rounded-lg text-xs my-5">
+        <div className="overflow-y-auto max-h-[230px] min-h-[100px] relative rounded-lg text-xs my-5">
           <table className="w-full relative bg-white">
             {/* Head */}
             <thead className="bg-naranja shadow-default sticky top-0 left-0 text-blanco">
               <tr>
-                <th className="p-2 font-medium tracking-wide">Nombre</th>
-                <th className="p-2 font-medium tracking-wide">Numero</th>
-                <th className="p-2 font-medium tracking-wide">Link</th>
+                <th className="p-2 font-medium tracking-wide text-left">
+                  Nombre
+                </th>
+                <th className="p-2 font-medium tracking-wide text-left">
+                  Numero
+                </th>
+                <th className="p-2 font-medium tracking-wide text-center">
+                  Link
+                </th>
                 <th className="p-2 font-medium tracking-wide">
                   <PlusCircleIcon
                     className="h-6 w-6 text-blanco hover:scale-110"
