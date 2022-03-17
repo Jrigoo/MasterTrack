@@ -51,7 +51,7 @@ export const LC: React.FC<Props> = ({ comite }) => {
                     <Numbers
                       goals={mes}
                       rounded="rounded-md"
-                      className="grid grid-cols-[repeat(3,80px)] gap-2 place-content-center place-items-center sm:grid-cols-[repeat(3,110px)] md:grid-cols-[repeat(3,130px)]"
+                      className="grid grid-cols-[repeat(3,80px)] gap-1 place-content-center place-items-center sm:grid-cols-[repeat(3,110px)] md:grid-cols-[repeat(3,130px)]"
                     />
                   </div>
                 </div>
