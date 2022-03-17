@@ -37,7 +37,7 @@ body {
     @apply py-5 text-lg text-center sm:text-xl md:text-2xl lg:text-3xl;
   }
   .numbers {
-    @apply w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mb-1 grid place-content-center bg-white shadow-default hover:scale-110 transition-all duration-200;
+    @apply w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mb-1 grid place-content-center bg-white shadow-default hover:scale-110 transition-all duration-500;
   }
   .subtitle {
     @apply px-2 text-sm text-center sm:text-base md:text-lg lg:text-xl;

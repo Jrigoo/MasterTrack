@@ -16,19 +16,19 @@ export const Footer = () => {
         <a href="https://www.instagram.com/ogx.canaleros/">
           <FontAwesomeIcon
             icon={faInstagram}
-            className="w-7 text-blanco md:w-10 hover:scale-110 transition-all duration-200"
+            className="w-7 text-blanco md:w-10 hover:scale-110 transition-all duration-500"
           />
         </a>
         <a href="https://www.linkedin.com/company/aiesec-panama/mycompany/?viewAsMember=true">
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="w-7 text-blanco md:w-10 hover:scale-110 transition-all duration-200"
+            className="w-7 text-blanco md:w-10 hover:scale-110 transition-all duration-500"
           />
         </a>
         <a href="https://github.com/Jrigoo">
           <FontAwesomeIcon
             icon={faGithub}
-            className="w-7 text-blanco md:w-10 hover:scale-110 transition-all duration-200"
+            className="w-7 text-blanco md:w-10 hover:scale-110 transition-all duration-500"
           />
         </a>
       </div>

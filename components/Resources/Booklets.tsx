@@ -12,7 +12,7 @@ export const Booklets: React.FC<Props> = ({ className }) => {
     >
       {/* Titulo */}
       <a href="https://drive.google.com/drive/folders/1QY9CHiJ3tQTQ1JIz99hGgNiRcb3VFYFC?usp=sharing">
-        <h1 className="title hover:scale-110 transition-all duration-200 hover:underline">
+        <h1 className="title hover:scale-110 transition-all duration-500 hover:underline">
           Sales <b>Booklets</b>
         </h1>
       </a>
@@ -22,7 +22,7 @@ export const Booklets: React.FC<Props> = ({ className }) => {
           href="https://docs.google.com/presentation/d/1TMg12X14gikYvr4MfiB5peShr5PNqv0t2KvfWnxLuL8/edit?usp=sharing"
           className="w-full h-full col-span-2 flex justify-center items-center sm:col-span-1"
         >
-          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-200 sm:px-3 sm:py-4 sm:w-full">
+          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-500 sm:px-3 sm:py-4 sm:w-full">
             <Image
               loading="lazy"
               width={256}
@@ -37,7 +37,7 @@ export const Booklets: React.FC<Props> = ({ className }) => {
 
         {/* Booklet GTe */}
         <a href="">
-          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-200 sm:px-3 sm:py-4 sm:w-full">
+          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-500 sm:px-3 sm:py-4 sm:w-full">
             <Image
               loading="lazy"
               width={256}
@@ -52,7 +52,7 @@ export const Booklets: React.FC<Props> = ({ className }) => {
 
         {/* Booklet GV */}
         <a href="https://docs.google.com/presentation/d/1X7zJZLKt8c_bd5tKBof1irCkTtJJvRmtGEfEJIcL5wg/edit?usp=sharing">
-          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-200 sm:px-3 sm:py-4 sm:w-full">
+          <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-500 sm:px-3 sm:py-4 sm:w-full">
             <Image
               loading="lazy"
               width={256}

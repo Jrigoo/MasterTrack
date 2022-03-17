@@ -47,7 +47,7 @@ export const SearchTools: React.FC<Props> = ({ className }) => {
         <div className="grid grid-cols-3">
           {GTCountries.map((country) => (
             <a key={country.name} href={country.link}>
-              <div className="grid place-content-center place-items-center grid-cols-1 m-3 hover:scale-110 transition-all duration-200">
+              <div className="grid place-content-center place-items-center grid-cols-1 m-3 hover:scale-110 transition-all duration-500">
                 <div className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 relative">
                   <Image
                     loading="lazy"
@@ -87,7 +87,7 @@ export const SearchTools: React.FC<Props> = ({ className }) => {
         <div className="flex flex-wrap pt-2 items-center justify-around">
           {GVCountries.map((country) => (
             <a key={country.name} href={country.link}>
-              <div className="grid place-content-center place-items-center grid-cols-1 m-3 hover:scale-110 transition-all duration-200">
+              <div className="grid place-content-center place-items-center grid-cols-1 m-3 hover:scale-110 transition-all duration-500">
                 <div className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 relative">
                   <Image
                     loading="lazy"

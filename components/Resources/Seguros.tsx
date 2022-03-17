@@ -18,7 +18,7 @@ export const Seguros: React.FC<Props> = ({ className }) => {
       <div className="grid grid-cols-2 gap-2">
         {SEGUROS.map((seguro) => (
           <a href={seguro.link} key={seguro.name}>
-            <div className="bg-white shadow-default p-5 grid place-content-center rounded-md hover:scale-110 transition-all duration-200">
+            <div className="bg-white shadow-default p-5 grid place-content-center rounded-md hover:scale-110 transition-all duration-500">
               <div className="w-16 h-w-16 relative sm:w-20 sm:h-20 md:w-24 md:h-24">
                 <Image
                   loading="lazy"

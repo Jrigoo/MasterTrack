@@ -9,7 +9,7 @@ interface Props {
 export const Profile: React.FC<Props> = ({ canalero }) => {
   return (
     <a href={canalero.insta}>
-      <div className="flex flex-col items-center mx-3 md:mx-5 mb-10 hover:scale-110 transition-all duration-200">
+      <div className="flex flex-col items-center mx-3 md:mx-5 mb-10 hover:scale-110 transition-all duration-500">
         <div className="rounded-full">
           <Image
             loading="lazy"

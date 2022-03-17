@@ -21,7 +21,7 @@ export const Navbar = () => {
     <nav className="h-fit p-5 flex justify-between items-center flex-wrap bg-white sticky top-0 left-0 z-10 shadow-sm text-xs md:text-sm lg:px-10">
       <Link href="/">
         <a>
-          <div className="relative h-5 w-28 md:w-32 md:h-10 lg:w-48 sm:hover:scale-110 transition-all duration-200">
+          <div className="relative h-5 w-28 md:w-32 md:h-10 lg:w-48 sm:hover:scale-110 transition-all duration-500">
             <Image
               src="/Images/ELD/Logo.png"
               alt="AIESEC logo"
@@ -33,7 +33,7 @@ export const Navbar = () => {
       </Link>
 
       <MenuIcon
-        className={`transition-all duration-300 h-5 w-5 text-navy sm:hidden ${
+        className={`transition-all duration-500 h-5 w-5 text-navy sm:hidden ${
           rotate && "rotate-90"
         }`}
         onClick={() => setRotate(!rotate)}
@@ -46,9 +46,19 @@ export const Navbar = () => {
             : "0px",
         }}
       >
+        <Link href="/">
+          <a
+            className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-500 ${
+              router.pathname === "/" && "font-bold"
+            }`}
+            ref={link}
+          >
+            Inicio
+          </a>
+        </Link>
         <Link href="/recursos">
           <a
-            className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-200 ${
+            className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-500 ${
               router.pathname.includes("recursos") && "font-bold"
             }`}
             ref={link}
@@ -58,7 +68,7 @@ export const Navbar = () => {
         </Link>
         <Link href="/metas">
           <a
-            className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-200 ${
+            className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-500 ${
               router.pathname.includes("metas") && "font-bold"
             }`}
           >
@@ -67,7 +77,7 @@ export const Navbar = () => {
         </Link>
         <a
           href="https://panacademyedu.wixsite.com/website/copia-de-2-f-l-bulls"
-          className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-200 ${
+          className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-500 ${
             router.pathname.includes("panacademy") && "font-bold"
           }`}
         >
@@ -75,7 +85,7 @@ export const Navbar = () => {
         </a>
         <Link href="/whatsapp">
           <a
-            className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-200 ${
+            className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-500 ${
               router.pathname.includes("whatsapp") && "font-bold"
             }`}
           >
@@ -84,7 +94,7 @@ export const Navbar = () => {
         </Link>
         <a
           href="https://docs.google.com/spreadsheets/d/1RTo7DT2lBSYe75vaH1-6TFTxYZsBaBjabupmI3bPkr4/edit?usp=sharing"
-          className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-200 ${
+          className={`p-1 sm:px-2 sm:py-0 md:px-5 lg:px-6 sm:hover:scale-110 transition-all duration-500 ${
             router.pathname.includes("contactos") && "font-bold"
           }`}
         >
