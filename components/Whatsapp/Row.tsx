@@ -16,13 +16,13 @@ export const Row: React.FC<Props> = ({ contact, idx, pitch }) => {
   const { deleteContacts, modifyContacts } = useData();
   const fullNumber = contact.number.replace("-", "").replace("+", "").trim();
 
-  function changeNumber(e: React.ChangeEvent<HTMLInputElement>) {
+  function changeNumber(e: React.ChangeEvent<HTMLTextAreaElement>) {
     modifyContacts(idx, {
       name: contact.name,
       number: e.target.value,
     });
   }
-  function changeName(e: React.ChangeEvent<HTMLInputElement>) {
+  function changeName(e: React.ChangeEvent<HTMLTextAreaElement>) {
     modifyContacts(idx, {
       name: e.target.value,
       number: contact.number,
@@ -36,21 +36,23 @@ export const Row: React.FC<Props> = ({ contact, idx, pitch }) => {
       } cursor-pointer text-xs`}
     >
       <td className="px-1 py-2 text-left">
-        <input
-          type="text"
+        <textarea
+          cols={30}
+          rows={10}
           value={contact.name}
-          className="w-5/6 p-1 outline-none bg-transparent"
           onChange={changeName}
-          placeholder="Añadir Nombre..."
+          placeholder="Añadir nombre..."
+          className="w-full max-h-8 p-1 outline-none resize-none text-xs rounded-md bg-transparent"
         />
       </td>
       <td className="px-1 py-2 text-left">
-        <input
-          type="text"
+        <textarea
+          cols={30}
+          rows={10}
           value={contact.number}
-          className="w-full p-1 outline-none bg-transparent"
           onChange={changeNumber}
-          placeholder="Añadir Número..."
+          placeholder="Añadir número..."
+          className="w-full max-h-8 p-1 outline-none resize-none text-xs rounded-md bg-transparent"
         />
       </td>
       <td className="px-1 py-2 flex items-center">
