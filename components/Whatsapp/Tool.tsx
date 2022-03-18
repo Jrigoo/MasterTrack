@@ -65,7 +65,7 @@ export const Tool = () => {
           rows={10}
           value={pitch}
           onChange={onChange}
-          className="w-full h-40 p-3 outline-none resize-none text-xs shadow-default rounded-b-lg"
+          className="cRow w-full h-40 p-3 outline-none resize-none text-xs shadow-default rounded-b-lg"
           placeholder="Holaaa! Mi nombre es Juan soy de AIESEC Panamá organización que busca desarrollar el liderazgo en Jóvenes a través de experiencias de profesionales internacionales. Te escribo porque pude notar que te registraste en nuestra plataforma. ¿Te gustaría recibir más información sobre nuestro programa de pasantías?"
         />
       </div>
@@ -89,7 +89,7 @@ export const Tool = () => {
         </header>
 
         {/* Tabla de contactos */}
-        <div className="overflow-y-auto max-h-[230px] min-h-[100px] relative rounded-lg text-xs my-5 hover:scale-105 transition-all duration-500">
+        <div className="contactos overflow-y-auto max-h-[230px] min-h-[100px] relative rounded-lg text-xs my-5 hover:scale-105 transition-all duration-500">
           <table className="w-full relative bg-white">
             {/* Head */}
             <thead className="bg-naranja shadow-default sticky top-0 left-0 text-blanco">

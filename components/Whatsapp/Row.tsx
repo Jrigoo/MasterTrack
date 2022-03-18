@@ -42,7 +42,7 @@ export const Row: React.FC<Props> = ({ contact, idx, pitch }) => {
           value={contact.name}
           onChange={changeName}
           placeholder="Añadir nombre..."
-          className="w-full max-h-8 p-1 outline-none resize-none text-xs rounded-md bg-transparent"
+          className="cRow w-full max-h-8 p-1 outline-none resize-none text-xs rounded-md bg-transparent"
         />
       </td>
       <td className="px-1 py-2 text-left">
@@ -52,7 +52,7 @@ export const Row: React.FC<Props> = ({ contact, idx, pitch }) => {
           value={contact.number}
           onChange={changeNumber}
           placeholder="Añadir número..."
-          className="w-full max-h-8 p-1 outline-none resize-none text-xs rounded-md bg-transparent"
+          className="cRow w-full max-h-8 p-1 outline-none resize-none text-xs rounded-md bg-transparent"
         />
       </td>
       <td className="px-1 py-2 flex items-center">

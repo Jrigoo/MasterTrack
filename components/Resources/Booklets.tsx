@@ -36,7 +36,7 @@ export const Booklets: React.FC<Props> = ({ className }) => {
         </a>
 
         {/* Booklet GTe */}
-        <a href="">
+        <a href="https://docs.google.com/presentation/d/1x6McC6aYU4RnP375aNNVAvYoEVtx9BxUaVeDvGD2GQc/edit?usp=sharing">
           <div className="w-[130px] bg-white shadow-default rounded-md px-2 py-3 hover:scale-110 transition-all duration-500 sm:px-3 sm:py-4 sm:w-full">
             <Image
               loading="lazy"

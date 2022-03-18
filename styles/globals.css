@@ -14,7 +14,8 @@ body {
   background-color: #edfbff;
 }
 
-::-webkit-scrollbar {
+/* width */
+.cRow::-webkit-scrollbar {
   display: none;
 }
 

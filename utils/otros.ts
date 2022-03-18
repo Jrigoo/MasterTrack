@@ -18,10 +18,10 @@ export const OTROS = [
     order: false,
   },
   {
-    bold: "Convenio",
-    light: "",
+    light: "Acuerdo de",
+    bold: "Entendimiento",
     link: "https://aiesecenpanama.typeform.com/to/e3xcTfA4",
-    order: true,
+    order: false,
   },
   {
     bold: "IR",

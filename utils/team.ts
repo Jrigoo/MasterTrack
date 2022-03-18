@@ -38,21 +38,21 @@ export const TEAM = [
   },
   {
     name: "Valentina Pardo",
-    role: "EST IR",
+    role: "EST PXP IR - Coach",
     image: "/Images/Network/Vale.jpeg",
-    insta: "",
+    insta: "https://www.instagram.com/valentina_pardo_99/",
   },
   {
     name: "Leyka Garzon",
-    role: "EST -",
-    image: "/Images/Network/Leyka.jpeg",
+    role: "EST Culture Manager",
+    image: "/Images/Network/Leyka.jpg",
     insta: "https://www.instagram.com/petite_anny/",
   },
   {
-    name: "Dayanaris -",
+    name: "Dayanaris Soberanis",
     role: "EST Cons. - Coach",
     image: "/Images/Network/Daya.jpeg",
-    insta: "",
+    insta: "https://www.instagram.com/daya_soberanis/",
   },
   {
     name: "Juan Riquelme",
