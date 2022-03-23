@@ -17,7 +17,7 @@ export const GTCountries = [
   {
     name: "Costa Rica",
     image: "/Images/Countries/Costa Rica.png",
-    link: "https://docs.google.com/spreadsheets/d/1q3M_6y-Zo6oNSiG2VYMJKhmoTGPffzzNGTgq0c5XLQ8/edit#gid=1594849950",
+    link: "https://bit.ly/iGTCostRicaSearchtool",
   },
   {
     name: "Guatemala",
