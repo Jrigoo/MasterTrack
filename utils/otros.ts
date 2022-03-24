@@ -24,10 +24,10 @@ export const OTROS = [
     order: false,
   },
   {
-    bold: "IR",
-    light: "Minimums",
-    link: "",
-    order: true,
+    light: "Link de",
+    bold: "SOPs",
+    link: "https://bit.ly/sop-pty",
+    order: false,
   },
   {
     bold: "Global",
