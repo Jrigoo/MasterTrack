@@ -38,13 +38,13 @@ export const OTROS = [
   {
     bold: "Portafolio",
     light: "AIESEC",
-    link: "bit.ly/portafolio-aiesecpty",
+    link: "https://bit.ly/portafolio-aiesecpty",
     order: true,
   },
   {
     bold: "Customer",
     light: "Persona",
-    link: "bit.ly/cp-aiesecpty",
+    link: "https://bit.ly/cp-aiesecpty",
     order: true,
   },
 ];

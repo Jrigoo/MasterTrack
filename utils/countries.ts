@@ -45,6 +45,6 @@ export const GVCountries = [
   {
     name: "Brazil",
     image: "/Images/Countries/Brazil.png",
-    link: "bit.ly/BRAZIL-NEWGV",
+    link: "https://bit.ly/BRAZIL-NEWGV",
   },
 ];
