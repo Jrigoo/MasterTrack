@@ -2,7 +2,7 @@ export const OTROS = [
   {
     bold: "Form",
     light: "EXPA/Podio",
-    link: "https://share.streamlit.io/aiesec-pty/register/main/main.py",
+    link: "https://aiesec-pty-register.vercel.app/",
     order: true,
   },
   {
